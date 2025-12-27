@@ -47,6 +47,7 @@ website-monitor/
 ├── logs/
 │ └── monitor.log # Monitoring logs
 └── README.md
+![website-monitoring-architecture png](https://github.com/user-attachments/assets/7a5dddac-c391-46f8-ac94-6d286ce5ab7b)
 
 ## ⚙️ How It Works
 
@@ -59,3 +60,6 @@ website-monitor/
    - Status ≠ 200 → **ALERT**
    - Response time > threshold → **ALERT**
 5. Logs results into `logs/monitor.log`
+
+<img width="1291" height="426" alt="Output" src="https://github.com/user-attachments/assets/1dabc87f-727c-4776-9cc0-83affbdc5bcf" />
+
