@@ -1,5 +1,3 @@
-# Website-Monitoring-using-Bash-Script
-A Bash-based website monitoring solution that performs HTTP health checks using curl, validates status codes, measures response latency, and logs alerts for downtime or performance degradation. Designed to simulate real-world DevOps monitoring fundamentals.
 # 🌐 Website Monitoring & Alerting using Bash
 
 A lightweight website monitoring solution built using **Linux Bash scripting**.  
@@ -49,3 +47,15 @@ website-monitor/
 ├── logs/
 │ └── monitor.log # Monitoring logs
 └── README.md
+
+## ⚙️ How It Works
+
+1. Reads website URLs from `url.txt`
+2. Sends HTTP requests using `curl`
+3. Captures:
+   - HTTP status code
+   - Response time
+4. Evaluates conditions:
+   - Status ≠ 200 → **ALERT**
+   - Response time > threshold → **ALERT**
+5. Logs results into `logs/monitor.log`
